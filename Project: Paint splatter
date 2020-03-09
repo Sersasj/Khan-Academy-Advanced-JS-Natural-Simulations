@@ -1,0 +1,19 @@
+var generator = new Random(1);
+var standardDeviation = 30;
+var mean = 200;
+
+
+var draw = function(){
+    var n1 = random(0,300);
+    var n2 = random(0,300);
+    var n3 = random(0,300);
+    
+    var x = (generator.nextGaussian() * standardDeviation) + mean;
+    noStroke();
+    ellipse(x,n2,20,20);
+    fill(n1,n2, n3);
+    
+    
+}; 
+
+
