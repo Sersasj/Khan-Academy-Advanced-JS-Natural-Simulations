@@ -1,0 +1,15 @@
+mouseMoved = function() {
+    background(255, 255, 255);
+    
+    var mouse = new PVector(mouseX, mouseY);
+    var magnitude = mouse.mag();
+    fill(255, 0, 0);
+    text(magnitude,mouse.x,mouse.y);
+    stroke(255, 0, 0);
+    strokeWeight(3);
+    line(0, 0, mouse.x, mouse.y);
+    
+    var um = dist(0,0,width,height);
+    var dois = map(magnitude,0,um,0,255);
+    background(dois, dois, dois);
+};  
